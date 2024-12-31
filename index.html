@@ -3,9 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="HTML tags">
+    <meta name="keywords" content="HTML, elements, tags">
+    <meta name="author" content="abcd">
+    <!--<meta http-equiv="refresh" content="30">-->
+    <title>Website</title>
 </head>
-<body>
+<body style="background-color:linen; font-size: large;">
+    <!--comment-->
+    <marquee style="background-color: rgb(116, 0, 0); color: white;">HTML Beginner's Course - 20% Off - BUY NOW</marquee>
+    <h1 style="text-align: center;">E X P L O R I N G &nbsp H T M L</h1>
+    <hr>
+        
+    <h2 style="background-color: maroon; color: azure; text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 475px;margin-right: 475px;">HTML ELEMENTS</h2>
     
+    <h3>1. Paragraph</h3>
+    <p><i>Lorem ipsum</i> <em>dolor</em> , <strong>sit</strong> amet <ins>consectetur</ins> adipisicing elit. <big>Doloribus</big> vitae <small>recusandae</small> aliquid, eos nobis, ipsa neque ipsum <del>repellat</del> obcaecati <sup>voluptatum</sup> excepturi <sub>eum</sub> deserunt <mark>aliquam</mark>  <span style="color: rgb(171, 0, 6);">officiis laudantium quod molestias iure</span>. Possimus.</p>
+    
+
+    <h3>2. Link</h3>
+    <a href="https://youtube.com/playlist?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s&si=llffbXLKqaNDMMNg" target="_blank" title="Youtube tutorial">
+        <b>HTML Tutorial</b>
+    </a><br>
+    <a href="#formsection">Jump to Forms</a>
+    <br>
+
+    <h3>3. Image</h3>
+    <a href="https://en.wikipedia.org/wiki/HTML5">
+        <img src="/media/images.png" height="200" width="200" alt="HTML logo" title="HTML5"><br>
+    </a>
+
+    <h3>4. Audio</h3>
+    <audio controls>
+        <source src="media/play.mp3">
+        <source src="play.wav">
+        This browser does not support HTML5 audio
+    </audio><br>
+    
+    <h3>5. Video</h3>
+    <video width="500" controls autoplay loop muted>
+        <source src="media/video.mp4">
+        <source src="video.WebM">
+        This browser does not support HTML5 video 
+    </video><br>
+
+    <div>
+        <h3>6. Lists</h3>
+    <h4>&nbsp; Ordered List</h4>
+        <ol type="a">
+            <li>HTML
+                <ul>
+                    <li>XHTML</li>
+                    <li>HTML4</li>
+                    <li>HTML5</li>
+                </ul>
+            </li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ol>
+    <h4>&nbsp; Unordered List</h4>
+        <ul>
+            <li>Alpha</li>
+            <li>Beta</li>
+            <li>Gamma</li>
+        </ul>
+    <h4>&nbsp; Description List</h4>
+    <dl>
+        <dt>&nbsp; HTML</dt>
+        <dd>&nbsp; Hyper Text Markup Language</dd>
+        <dt>&nbsp; CSS</dt>
+        <dd>&nbsp; Cascading Style Sheets</dd>
+    </dl>
+    </div>
+    
+    <h3>7. Table</h3>
+    <table border="2" width="500" height="100">
+        <tr bgcolor="lightgrey" align="center">
+            <th width="100">S.no</th>
+            <th width="250">Product</th>
+            <th width="150">Price</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Laptop</td>
+            <td>50000</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Tablet</td>
+            <td>30000</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Earphones</td>
+            <td>5000</td>
+        </tr>
+    </table><br>
+
+    <h3>8. iframes</h3><!--used for advertisements-->
+    <iframe height="350" style="border:0;" src="https://www.wikipedia.com" width="600">
+    </iframe><br><br>
+
+    <h3>9. Button</h3>
+    <a href="https://www.google.com" target="_blank">
+        <button style="background-color: azure;border-radius: 5px;">Click me</button>
+    </a>
+    <br><br>
+
+    <h3 id="formsection">10. Form</h3>
+    <form>
+        <label for="fname">Username: </label>
+        <input type="text" id="fname" placeholder="firstname" required>
+        <br><br>
+        <label for="pas">Password: </label>
+        <input type="password" id="pas" placeholder="DOB" required maxlength="8">
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email">
+        <br><br>
+        <label for="date">Date: </label>
+        <input type="date" id="date" >
+        <br><br>
+        <label for="num">Quantity: </label>
+        <input type="number" id="num" min="0" max="99" value="1">
+        <br><br>
+        <label>Payment method: </label>
+        <label>Cash on Delivery</label>
+        <input type="radio" name="payment">
+        <label>UPI</label>
+        <input type="radio" name="payment">
+        <br><br>
+        <label for="del">Delivery slot:</label>
+        <select id="del">
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+        </select>
+        <br><br>
+        <input type="reset">
+        <br><br>
+        <input type="submit">
+    </form><br>
+
+    <a href="page2.html" target="_self">
+        Contact
+    </a>
 </body>
 </html>
