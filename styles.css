@@ -1,0 +1,39 @@
+*{text-decoration: none;}
+body {
+    background-color: linen;
+    font-size: large;
+}
+marquee{
+    background-color: rgb(0, 0, 0); color: #C5A880; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.navbar{
+    background-color: maroon; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 15px; padding-right: 15px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+    font-size: 35px; font-weight: 600; color: white; letter-spacing: 3px; font-weight: bolder;
+}
+ul.list li{
+    list-style: none; display: inline-block;
+}
+ul.list li a{
+    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+ul.list button{
+    background-color: white; color: black; padding: 10px; border-radius: 10px; width: 90px; border:0;
+}
+ul.list button a{
+    color: rgb(0, 0, 0); font-size: 15px; font-weight: bold; 
+}
+h1.title {
+    text-align: center;
+}
+h2.topic{
+    background-color: maroon; color: azure; text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 475px;margin-right: 475px;
+}
+.btn{
+    background-color: azure;border-radius: 5px; width: 90px; padding: 10px;
+}
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTML tags">
@@ -9,13 +10,26 @@
     <!--<meta http-equiv="refresh" content="30">-->
     <title>Website</title>
 </head>
-<body style="background-color:linen; font-size: large;">
+<body>
     <!--comment-->
-    <marquee style="background-color: rgb(116, 0, 0); color: white;">HTML Beginner's Course - 20% Off - BUY NOW</marquee>
-    <h1 style="text-align: center;">E X P L O R I N G &nbsp H T M L</h1>
+    <marquee>HTML Beginner's Course - 20% Off - BUY NOW</marquee>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">CODE</a></div>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <button><a href="#">Sign in</a></button>
+                <button><a href="#">Sign up</a></button>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="title">E X P L O R I N G &nbsp H T M L</h1>
     <hr>
         
-    <h2 style="background-color: maroon; color: azure; text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 475px;margin-right: 475px;">HTML ELEMENTS</h2>
+    <h2 class="topic">HTML ELEMENTS</h2>
     
     <h3>1. Paragraph</h3>
     <p><i>Lorem ipsum</i> <em>dolor</em> , <strong>sit</strong> amet <ins>consectetur</ins> adipisicing elit. <big>Doloribus</big> vitae <small>recusandae</small> aliquid, eos nobis, ipsa neque ipsum <del>repellat</del> obcaecati <sup>voluptatum</sup> excepturi <sub>eum</sub> deserunt <mark>aliquam</mark>  <span style="color: rgb(171, 0, 6);">officiis laudantium quod molestias iure</span>. Possimus.</p>
@@ -30,7 +44,7 @@
 
     <h3>3. Image</h3>
     <a href="https://en.wikipedia.org/wiki/HTML5">
-        <img src="/media/images.png" height="200" width="200" alt="HTML logo" title="HTML5"><br>
+        <img src="/media/images.png" height="250" width="300" alt="HTML logo" title="HTML5"><br>
     </a>
 
     <h3>4. Audio</h3>
@@ -41,7 +55,7 @@
     </audio><br>
     
     <h3>5. Video</h3>
-    <video width="500" controls autoplay loop muted>
+    <video width="300" controls autoplay loop muted>
         <source src="media/video.mp4">
         <source src="video.WebM">
         This browser does not support HTML5 video 
@@ -101,12 +115,12 @@
     </table><br>
 
     <h3>8. iframes</h3><!--used for advertisements-->
-    <iframe height="350" style="border:0;" src="https://www.wikipedia.com" width="600">
+    <iframe height="350" style="border:0;" src="https://www.wikipedia.com" width="500">
     </iframe><br><br>
 
     <h3>9. Button</h3>
     <a href="https://www.google.com" target="_blank">
-        <button style="background-color: azure;border-radius: 5px;">Click me</button>
+        <button class="btn">Click me</button>
     </a>
     <br><br>
 
@@ -144,9 +158,5 @@
         <br><br>
         <input type="submit">
     </form><br>
-
-    <a href="page2.html" target="_self">
-        Contact
-    </a>
 </body>
 </html>
