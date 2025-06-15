@@ -2,21 +2,34 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/navBar'
 import Home from './pages/home';
-import WatchList from './pages/watchlist';
+import Watchlist from './pages/watchlist';
 import './App.css'
+import Action from './pages/action';
+import Comedy from './pages/comedy';
+import Thriller from './pages/thriller';
+import Horror from './pages/horror';
+import Family from './pages/family';
+import Animated from './pages/animated';
+import Crime from './pages/crime';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
       <NavBar/> 
-      <div className="bg-slate-900 w-full h-screen mt-3"></div>
       <main className='main-content'>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/watchlist' element={<WatchList/>}/>
-      </Routes>
+        <Route path='/watchlist' element={<Watchlist/>}/>
+        <Route path='/action' element={<Action/>}/>
+        <Route path='/comedy' element={<Comedy/>}/>
+        <Route path='/thriller' element={<Thriller/>}/>
+        <Route path='/horror' element={<Horror/>}/>
+        <Route path='/crime' element={<Crime/>}/>
+        <Route path='/family' element={<Family/>}/>
+        <Route path='/animated' element={<Animated/>}/>
+
+      </Routes> 
     </main>
     </div>
   )
