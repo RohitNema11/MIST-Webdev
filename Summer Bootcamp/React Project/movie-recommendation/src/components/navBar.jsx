@@ -5,7 +5,7 @@ function NavBar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
-        <nav className="bg-black text-white px-6 py-4 flex justify-between relative m-0">
+    <nav className="bg-black text-white px-6 py-4 flex justify-between relative m-0">
         <div className="text-2xl font-bold">
             <Link to="/">Flickwise</Link>
         </div>

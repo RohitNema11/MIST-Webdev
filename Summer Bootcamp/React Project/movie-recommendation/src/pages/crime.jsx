@@ -1,4 +1,4 @@
- import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import MovieCard from "../components/movieCard";
 import { searchMovies, getCrimeMovies } from "../services/api";
 
